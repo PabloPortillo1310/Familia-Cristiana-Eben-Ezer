@@ -4,230 +4,283 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Familia Cristiana Eben Ezer</title>
-
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<nav>
-<div class="logo">FCEE</div>
-
-<ul>
-<li><a href="#inicio">Inicio</a></li>
-<li><a href="#nosotros">Nosotros</a></li>
-<li><a href="#ministerios">Ministerios</a></li>
-<li><a href="#eventos">Eventos</a></li>
-<li><a href="#predica">Predicación</a></li>
-<li><a href="#ubicacion">Ubicación</a></li>
-</ul>
+<!-- NAV -->
+<nav id="navbar">
+  <a class='logo' href='/'>FCEE</a>
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#reuniones">Reuniones</a></li>
+    <li><a href="#ministerios">Ministerios</a></li>
+    <li><a href="#eventos">Horarios</a></li>
+    <li><a href="#predica">Predicación</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+  </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="inicio">
-
-<div class="overlay">
-
-<h3>BIENVENIDO A CASA</h3>
-
-<h1>FAMILIA CRISTIANA<br>EBEN EZER</h1>
-
-<p>
-Porque donde están dos o tres congregados en mi nombre,
-allí estoy yo en medio de ellos.
-</p>
-
-<div class="info-hero">
-📍 Bombona 3545 - San Atilio<br>
-⛪ Miércoles 19:00 hs<br>
-🔥 Jóvenes +18 Sábados 19:00 hs<br>
-✝️ Domingo 10:00 AM
-</div>
-
-<a href="#nosotros" class="btn">Conocer Más</a>
-
-</div>
-
+  <div class="hero-overlay">
+    <p class="hero-eyebrow">BIENVENIDO A CASA</p>
+    <h1 class="hero-title">FAMILIA CRISTIANA<br><span>EBEN EZER</span></h1>
+    <p class="hero-verse">"Porque donde están dos o tres congregados en mi nombre,<br>allí estoy yo en medio de ellos."</p>
+    <div class="hero-info">
+      <span><i class="fas fa-map-marker-alt"></i> Bombona 3545 – San Atilio</span>
+      <span><i class="fas fa-church"></i> Miércoles 19:00 hs</span>
+      <span><i class="fas fa-fire"></i> Jóvenes +18 · Sábados 19:00 hs</span>
+      <span><i class="fas fa-cross"></i> Domingo 10:00 AM</span>
+    </div>
+    <a href="#nosotros" class="btn-primary">Conocer Más <i class="fas fa-arrow-down"></i></a>
+  </div>
+  <div class="hero-scroll"></div>
 </section>
 
-<section id="nosotros">
-
-<h2 class="titulo">¿Quiénes Somos?</h2>
-
-<div class="nosotros">
-
-Somos una iglesia comprometida con la enseñanza de la Palabra de Dios,
-la formación de discípulos y el crecimiento espiritual de las familias.
-
-Creemos en el poder transformador de Jesucristo y en la obra del Espíritu Santo
-para restaurar vidas, hogares y generaciones.
-
-</div>
-
+<!-- QUIÉNES SOMOS -->
+<section id="nosotros" class="section-light">
+  <div class="container">
+    <span class="section-tag">Nuestra Historia</span>
+    <h2 class="section-title">¿Quiénes Somos?</h2>
+    <div class="divider"></div>
+    <div class="nosotros-grid">
+      <div class="nosotros-text">
+        <p>Somos una iglesia comprometida con la enseñanza de la Palabra de Dios, la formación de discípulos y el crecimiento espiritual de las familias.</p>
+        <p>Creemos en el poder transformador de Jesucristo y en la obra del Espíritu Santo para restaurar vidas, hogares y generaciones.</p>
+      </div>
+      <div class="nosotros-valores">
+        <div class="valor">
+          <i class="fas fa-bible"></i>
+          <h4>Palabra</h4>
+          <p>Fundados en la Escritura</p>
+        </div>
+        <div class="valor">
+          <i class="fas fa-hands-praying"></i>
+          <h4>Oración</h4>
+          <p>Vida de comunión con Dios</p>
+        </div>
+        <div class="valor">
+          <i class="fas fa-heart"></i>
+          <h4>Comunidad</h4>
+          <p>Familia que se cuida</p>
+        </div>
+        <div class="valor">
+          <i class="fas fa-dove"></i>
+          <h4>Espíritu</h4>
+          <p>Guiados por el Espíritu Santo</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="ministerios">
+<!-- REUNIONES (INTERACTIVE CARDS) -->
+<section id="reuniones" class="section-dark">
+  <div class="container">
+    <span class="section-tag light">Nuestros Espacios</span>
+    <h2 class="section-title light">Reuniones</h2>
+    <div class="divider gold"></div>
+    <p class="section-subtitle light">Cada reunión es un espacio diseñado para crecer, conectar y encontrarte con Dios.<br>Hacé clic para conocer más.</p>
+    <div class="reuniones-grid">
 
-<h2 class="titulo">Nuestros Ministerios</h2>
+      <a class='reunion-card' href='jovenes.html'>
+        <div class="reunion-img" style="background-image:url('img/jovenes.jpg')"></div>
+        <div class="reunion-overlay">
+          <div class="reunion-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Reunión de Jóvenes</h3>
+          <p>Una generación apasionada por Cristo</p>
+          <span class="reunion-cta">Ver más <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
 
-<div class="cards">
+      <a class='reunion-card' href='hombres.html'>
+        <div class="reunion-img" style="background-image:url('img/hombres.jpg')"></div>
+        <div class="reunion-overlay">
+          <div class="reunion-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Reunión de Hombres</h3>
+          <p>Hombres que buscan a Dios con valentía</p>
+          <span class="reunion-cta">Ver más <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
 
-<div class="card">
-<img src="yng.png" alt="YNG">
-<h3>YNG</h3>
-<p>
-Youth Next Generation.
-Una generación apasionada por Cristo.
-</p>
-</div>
+      <a class='reunion-card' href='mujeres.html'>
+        <div class="reunion-img" style="background-image:url('img/mujeres.jpg')"></div>
+        <div class="reunion-overlay">
+          <div class="reunion-icon"><i class="fas fa-star"></i></div>
+          <h3>Reunión de Mujeres</h3>
+          <p>Mujeres de fe, propósito y gracia</p>
+          <span class="reunion-cta">Ver más <i class="fas fa-arrow-right"></i></span>
+        </div>
+      </a>
 
-<div class="card">
-<img src="fcee.png" alt="FCEE">
-<h3>FCEE</h3>
-<p>
-Camino a la Excelencia.
-Formando líderes comprometidos con Dios.
-</p>
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
-<section id="eventos">
-
-<h2 class="titulo">Calendario de Eventos</h2>
-
-<div class="calendario">
-
-<div class="evento">
-<h3>Lunes</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="evento">
-<h3>Martes</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="evento">
-<h3>Miércoles</h3>
-<p>Culto General</p>
-<strong>19:00 hs</strong>
-</div>
-
-<div class="evento">
-<h3>Jueves</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="evento">
-<h3>Viernes</h3>
-<p>Próximamente</p>
-</div>
-
-<div class="evento">
-<h3>Sábado</h3>
-<p>Reunión de Jóvenes +18</p>
-<strong>19:00 hs</strong>
-</div>
-
-<div class="evento">
-<h3>Domingo</h3>
-<p>Culto General</p>
-<strong>10:00 AM</strong>
-</div>
-
-</div>
-
+<!-- MINISTERIOS -->
+<section id="ministerios" class="section-light">
+  <div class="container">
+    <span class="section-tag">Crecimiento</span>
+    <h2 class="section-title">Nuestros Ministerios</h2>
+    <div class="divider"></div>
+    <div class="ministerios-grid">
+      <div class="ministerio-card">
+        <div class="ministerio-badge">YNG</div>
+        <h3>Youth Next Generation</h3>
+        <p>Una generación apasionada por Cristo, levantada para impactar su mundo con el Evangelio.</p>
+        <ul>
+          <li><i class="fas fa-check"></i> Sábados 19:00 hs</li>
+          <li><i class="fas fa-check"></i> Jóvenes +18</li>
+          <li><i class="fas fa-check"></i> Música, Palabra y Comunidad</li>
+        </ul>
+      </div>
+      <div class="ministerio-card featured">
+        <div class="ministerio-badge">FCEE</div>
+        <h3>Camino a la Excelencia</h3>
+        <p>Formando líderes comprometidos con Dios, la familia y la comunidad. Un espacio para crecer en carácter y propósito.</p>
+        <ul>
+          <li><i class="fas fa-check"></i> Miércoles 19:00 hs</li>
+          <li><i class="fas fa-check"></i> Culto General</li>
+          <li><i class="fas fa-check"></i> Enseñanza y Discipulado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="predica">
-
-<h2 class="titulo">Predicación Destacada</h2>
-
-<div class="predica">
-
-<h3>Pastor Damián</h3>
-
-<h4>"Sin Fe es imposible agradar a Dios"</h4>
-
-<p><strong>Referencias Bíblicas:</strong></p>
-
-<ul>
-<li>Levítico 23:15</li>
-<li>Deuteronomio 16:10</li>
-<li>Hechos 2:1</li>
-</ul>
-
-<br>
-
-<ul>
-<li>Cuando queremos llegar a Dios con nuestros propios pensamientos, fracasamos.</li>
-<li>Nosotros no nos acercamos a Dios; es Él quien se acerca a nosotros.</li>
-<li>Después del derramamiento del Espíritu Santo siempre viene la persecución.</li>
-<li>Para eso se nos fue dado el Espíritu Santo: para no sentir temor.</li>
-</ul>
-
-</div>
-
+<!-- HORARIOS -->
+<section id="eventos" class="section-gold">
+  <div class="container">
+    <span class="section-tag light">Agenda Semanal</span>
+    <h2 class="section-title light">Calendario de Actividades</h2>
+    <div class="divider white"></div>
+    <div class="calendario-grid">
+      <div class="cal-item inactive"><span class="day">LUN</span><p>Próximamente</p></div>
+      <div class="cal-item inactive"><span class="day">MAR</span><p>Próximamente</p></div>
+      <div class="cal-item active"><span class="day">MIÉ</span><p>Culto General</p><strong>19:00 hs</strong></div>
+      <div class="cal-item inactive"><span class="day">JUE</span><p>Próximamente</p></div>
+      <div class="cal-item inactive"><span class="day">VIE</span><p>Próximamente</p></div>
+      <div class="cal-item active"><span class="day">SÁB</span><p>Reunión de Jóvenes +18</p><strong>19:00 hs</strong></div>
+      <div class="cal-item active"><span class="day">DOM</span><p>Culto General</p><strong>10:00 AM</strong></div>
+    </div>
+  </div>
 </section>
 
-<section>
-
-<h2 class="titulo">Más Información</h2>
-
-<button class="accordion">Reunión de Jóvenes +18</button>
-
-<div class="panel">
-<p>
-Todos los sábados a las 19:00 hs.
-Espacio de crecimiento espiritual, amistad y propósito.
-</p>
-</div>
-
-<button class="accordion">Reunión de Mujeres</button>
-
-<div class="panel">
-<p>
-Próximamente estaremos publicando horarios e información.
-</p>
-</div>
-
-<button class="accordion">Reunión de Hombres</button>
-
-<div class="panel">
-<p>
-Próximamente estaremos publicando horarios e información.
-</p>
-</div>
-
+<!-- PREDICACIÓN -->
+<section id="predica" class="section-light">
+  <div class="container">
+    <span class="section-tag">Palabra de Dios</span>
+    <h2 class="section-title">Predicación Destacada</h2>
+    <div class="divider"></div>
+    <div class="predica-card">
+      <div class="predica-header">
+        <div class="pastor-avatar"><i class="fas fa-user"></i></div>
+        <div>
+          <h3>Pastor Damián</h3>
+          <p>Familia Cristiana Eben Ezer</p>
+        </div>
+      </div>
+      <blockquote>"Sin Fe es imposible agradar a Dios"</blockquote>
+      <div class="predica-body">
+        <div class="referencias">
+          <h4><i class="fas fa-book-open"></i> Referencias Bíblicas</h4>
+          <ul>
+            <li>Levítico 23:15</li>
+            <li>Deuteronomio 16:10</li>
+            <li>Hechos 2:1</li>
+          </ul>
+        </div>
+        <div class="puntos">
+          <h4><i class="fas fa-lightbulb"></i> Puntos Clave</h4>
+          <ul>
+            <li>Cuando queremos llegar a Dios con nuestros propios pensamientos, fracasamos.</li>
+            <li>Nosotros no nos acercamos a Dios; es Él quien se acerca a nosotros.</li>
+            <li>Después del derramamiento del Espíritu Santo siempre viene la persecución.</li>
+            <li>Para eso se nos fue dado el Espíritu Santo: para no sentir temor.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="ubicacion">
-
-<h2 class="titulo">Ubicación</h2>
-
-<p style="text-align:center;">
-📍 Bombona 3545 - San Atilio
-</p>
-
-<iframe class="mapa"
-src="https://maps.google.com/maps?q=Bombona%203545&t=&z=13&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
+<!-- UBICACIÓN -->
+<section id="ubicacion" class="section-dark">
+  <div class="container">
+    <span class="section-tag light">Encontranos</span>
+    <h2 class="section-title light">Ubicación</h2>
+    <div class="divider gold"></div>
+    <div class="ubicacion-wrapper">
+      <div class="ubicacion-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Dirección</h4>
+            <p>Bombona 3545 – San Atilio</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-church"></i>
+          <div>
+            <h4>Culto General</h4>
+            <p>Miércoles 19:00 hs · Domingo 10:00 AM</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-fire"></i>
+          <div>
+            <h4>Jóvenes +18</h4>
+            <p>Sábados 19:00 hs</p>
+          </div>
+        </div>
+      </div>
+      <iframe class="mapa"
+        src="https://maps.google.com/maps?q=Bombona%203545&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-
-<h2>Familia Cristiana Eben Ezer</h2>
-
-<p>Una iglesia para toda la familia.</p>
-
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">FCEE</span>
+      <p>Familia Cristiana Eben Ezer</p>
+      <p class="footer-verse">"El Señor de los ejércitos está con nosotros"</p>
+    </div>
+    <div class="footer-links">
+      <h5>Secciones</h5>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#reuniones">Reuniones</a></li>
+        <li><a href="#ministerios">Ministerios</a></li>
+        <li><a href="#eventos">Horarios</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+    </div>
+    <div class="footer-reuniones">
+      <h5>Reuniones</h5>
+      <ul>
+        <li><a href='/jovenes'>Reunión de Jóvenes</a></li>
+        <li><a href='/hombres'>Reunión de Hombres</a></li>
+        <li><a href='/mujeres'>Reunión de Mujeres</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Familia Cristiana Eben Ezer · Todos los derechos reservados.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
