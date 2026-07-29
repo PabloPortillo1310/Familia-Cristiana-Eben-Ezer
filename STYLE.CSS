@@ -524,7 +524,6 @@ footer {
   display: grid; grid-template-columns: 2fr 1fr; gap: 50px; align-items: start;
 }
 
-.info-main {}
 
 .info-main h2 {
   font-family: 'Playfair Display', serif;
@@ -536,7 +535,6 @@ footer {
   line-height: 1.9; margin-bottom: 20px;
 }
 
-.info-sidebar {}
 
 .info-box {
   background: var(--dark2); border-radius: 16px;
